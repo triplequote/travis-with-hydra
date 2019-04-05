@@ -1,9 +1,10 @@
-before_install:
-  - mkdir -p $HOME/.triplequote
-  - openssl aes-256-cbc -K $encrypted_e0d49def13c5_key -iv $encrypted_e0d49def13c5_iv -in hydra.license.enc -out $HOME/.triplequote/hydra.license -d
 language: scala
 jdk:
 - oraclejdk8
 script:
 - cat $HOME/.triplequote/hydra.license
 - sbt test
+before_install:
+- mkdir -p $HOME/.triplequote
+- openssl aes-256-cbc -K $encrypted_e0d49def13c5_key -iv $encrypted_e0d49def13c5_iv
+  -in hydra.license.enc -out $HOME/.triplequote/hydra.license -d
