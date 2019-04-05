@@ -10,3 +10,8 @@ script:
 env:
   matrix:
     secure: W53/wRlRSu4KBrQpIS8tkOaWbyY1yVnD25/M9dOEBg4YlZDOlrXsCn3+JQfOvAH3t/TMvxjDwL2J9PkG7Xm7LtkEcoem9riVz7fld6ui5VbycF0oo/g5oNmKrxJxD9AEkYKuy88YXDbFVORBPTlhG8ZlMRL0sZH2w0/FecXZibAJdU3kj2qXLdO0+xvAokN3R3nzwxKwApWE3DP/OUT+ZmiGCeHro8HIkQBKa/PA6/YSMw2SoXPuTfGftH9GeaZD4vpmDUpzPbrg5FLMwbmd9ZDy3MKBqnBsbfHoEmh+gLxrf3FAFYG5j5PaTA2BvoEMMZzSbJ3WhTglNpXj2Wrnxg6rCLfXj3C4AkrWTo0unttQbKajr/xogn7qJrH09iA9trXT1GQWoOF7KOXRI4x/qj1eelf65Uk/kNUtZBCxf6fNjm0qVcJTL+pFJxAJxsSyBdw4VSvywnzAixanFfXN1VVIsyds3CfAXoya8p8Rkn1zX4I9zLgHX8yuE3aQmctBFNjJN7an713omky+Vwo00OQTR2L8/V5a+inoOTkwkYj1ufaOizQTi1MSVkL/LPKWEVqe3CDkhs9Ua9dEeey2NhOrIUaSWAv/MjZ3ywsFqe7jOL6AWrnQnTiryZTMChOwPauiyHUQzLf7AdfAUcBbNILKtZuE6N3fguHtW99IPjY=
+
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt
