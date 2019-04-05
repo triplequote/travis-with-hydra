@@ -13,5 +13,6 @@ env:
 
 cache:
   directories:
+    - .hydra
     - $HOME/.ivy2/cache
     - $HOME/.sbt
