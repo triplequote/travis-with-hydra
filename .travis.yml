@@ -4,6 +4,7 @@ jdk:
   - oraclejdk8
 
 script:
+  - ls -l .hydra
   - mkdir -p $HOME/.triplequote && echo "$LICENSE" > "$HOME/.triplequote/hydra.license"
   - sbt test
 
