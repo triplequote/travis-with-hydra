@@ -1,7 +1,10 @@
 language: scala
-
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 script:
-  - sbt test
+- echo "${HYDRA_LICENSE}"
+- mkdir -p /root/.triplequote && echo "${HYDRA_LICENSE}" > "/root/.triplequote/hydra.license"
+- sbt test
+env:
+  global:
+    secure: sz/aD1idxBSW0qpWgdKm+oJcAhDaQL+2BojNzCWqtu7K79pnxtPBUrhX17wIGLdTF/QnBoo/Nz8GoFUa9S1Vcxkzx/WKtcWq8dSSTm4J16twwXRsGK0RgRW/F3QKFX9qihz9uDFetMutpIWP0ZOdFHmVOWM+aCib/TxVk8DdPYaYGItdJ5Rur5lKXKDQvBc7Ewy7IY8bVEnNhawTmZoRyv/EUZtQ+hXv4t+YFi70Sn3Q+KfljdDVqlXmF6AXP70758Py/DcIha+WJBg0MtEIYIIXM86YH96wL1nUdYdE9nCGJtOrOSzljTJgZ7/86MRjDR9Gy6tvPiE7eEbilRHvvAS/5PCoWnJNF7YONOpfBjyuiFH6AL0IGDEhRJSQca+457NTvIelvLfwl6NGB+5JrJRp1X1nPb/XzMJ9yjE4IcsclOodI8hsDvMAnmGveNNdLoffjl2BpEvax/tqRYFt1pqhzwNVpjZepc2XLzO9+Vp0GEv58o6Mg2pwIzBrOXeARS4AlnxnmTtB1LiVGD0mhL7gBYGVSuZYFfO6W/JGBmEuIGVCtfIqYocqQhNwO1xN9Mq9AK1PpeYliPWT5YH3UF8cWEfTiXQIDE48Gg8/MMWasWXZtmMSFun7fjk+K4qOfxB9euEwKOe2NqeIjx34H0yicqjMImURwhckbigoffI=
