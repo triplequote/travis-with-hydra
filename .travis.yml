@@ -1,12 +1,10 @@
 language: scala
-
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 script:
-  - mkdir -p $HOME/.triplequote && echo "${HYDRA_LICENSE}" > "$HOME/.triplequote/hydra.license"
-  - sbt test
-
+- mkdir -p $HOME/.triplequote && echo "${HYDRA_LICENSE}" > "$HOME/.triplequote/hydra.license"
+- cat $HOME/.triplequote/hydra.license
+- sbt test
 env:
-  matrix:
-    secure: Wc7VdvS339DR/+jLLuvKbaLsTwARsz/WZKiV1ur9s56s2Li+nzjNVLfmLaqJ6vBfnjEpHjjp8qgllB7s+9rJl/Hs5f6uHuuMtjzkMhS6osraQjLCC7TI2oU7/x0fqqHLLCXsmoQmpVSldrMYhIw4IpiWne1FNOS2vqoJpDRnZVxnFeIkDsrz+Fq/Rs2xKvhTqBdQhw6Xd1q6wxBckjUPl3onwooJlubCnK6KOx80O7moowZjAAm9RagHSMYvHBdJvz6Fiuiyal6yUdkfCJFWF9NRu2b0QfkOLDDRueIpCQdBtev2nUH62mrgTj6snxIcEk/gQ0XnCSZFlyzbvqxZQ1EVWVqccADxwKJhPLY2eUiV3LggCpU0vC4Cz2mbuL7/23uVeYaZKf/Y2IJCOb6zXIoSJQwP04ywWPVKAvlnp9NiTfH6OpuQwbRKVEHlTM764xiRIMAjzHCWlb6jmdg4n38sXzc6jwvVDH98N5DQ5qtbtPDFn429L+NdKSfd9RaNftHtSA9jPfhfG2HepNcKktn5GLp+HC3eERYEFfq/B6tSp8XJ7SVDMUxEtjiiJaFPqvgYm3GIrlxjimkEGjZ8Ufs9ppJaTUlLqzH0d6FHachpMrXS9bx2VRDehLuGWG3wxx1sCMa/vOliEPcFfDOITJm8G+r/Tf7uHHWq09MjX+k=
+  global:
+    secure: E3P6J41WwPhkLRFnjBI7ns9GLhg/xtu+vi7V3k6YF/n0nCyAMkYlUlU4ONdPzIOWrwcEiAAyFPws1djCtqucp3kgpZUJokp9UgHslkKJCgM8tsaoqZc8tkGKhoxtsYaY/jddmnV7azbVmNbFMIAeCxgZr7thzkvSksWhmZach72cHPRVFYt8G9qk9sUoRESCh163supIv2QYYun/Lpvr913HGzKY3+pQ2vQAAHzIFFTpOBEn24wUUmKU+frX3Caw69cu5yFcsR3QVxmgZb5c35FWVcWnxOOpZskwbdHJ89MTDEi+hfEGEhDJmqjwU/EY5Ubs/QLDo80QH9p4ysAOT8NiRCTrIEZz9DlD3GkMahFqlR0csHvF5TfX/Yd2tkbfpyi5qJoKKBAcMKVNfaP2c6cRDO3stHsfXhjtCyj5i7c5KpC7/Vls7W6nY8XoVlrMytUXMMgk+3kSzxcXjXOX+RG3nsCOPYJYvkI2+npFkRgpxjr/11WrXsIK4eoawrKE/9Y0wsBrTaeYgeHZUJKwSEMSwFFnZmLYkG752zicmGFv6hniF8aZluFswFkcqssu1qOvslh5mHxyaIudHC2vUYuXCK7dBYl23DN6SA/RNP38bu/Snp+7ZqPALpUJcNSQBrI9BwYPw3JB8FYGS4jVwzd4RFQdc8EwDUJXo4S5tnQ=
