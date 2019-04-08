@@ -3,9 +3,15 @@
 
 This repository showcases and explains how to set up Travis to compile a sbt Scala project using the [Triplequote Hydra parallel compiler](https://triplequote.com/).
 
-# Setup
+# How to request a Hydra license
 
-Start by [requesting a free Hydra Server trial license](https://triplequote.com/hydra/trial) or contact us at [ping@triplequote.com](mailto:ping@triplequote.com) to obtain a [Hydra Open Source project license](#hydra-open-source-project-license).
+* Open Source: Contact us at [ping@triplequote.com](mailto:ping@triplequote.com) to obtain a [Hydra Open Source project license](#hydra-open-source-project-license).
+
+* Closed Source: Follow the [Hydra getting started](https://triplequote.com/hydra/trial) to claim your free trial license.
+
+In either case, setting up Hydra takes less than 5 minutes!
+
+# Setup
 
 The setup assumes your project is already configured to use TravisCI. If not, please read the [getting started](https://docs.travis-ci.com/user/tutorial/) to setup your project to build with TravisCI.
 
@@ -26,7 +32,9 @@ script:
 
 Mind that this should be done before any all steps compiling Scala. Look at [this repo's .travis.yml](https://github.com/triplequote/travis-with-hydra/blob/master/.travis.yml) for an example.
 
-4. Commit the changes to your `.travis.yml`.
+4. Add the `.hydra` folder to the set of [cached directories](https://docs.travis-ci.com/user/caching/) in your [.travis.yml](https://github.com/triplequote/travis-with-hydra/blob/master/.travis.yml). This is an optimization that should help Hydra delivering optimal performance (read the [related documentation](https://docs.triplequote.com/user-guide/#the-hydra-directory) for details).
+
+5. Commit the changes to your `.travis.yml`.
 
 You are all set to compile Scala with Hydra on Travis!
 
