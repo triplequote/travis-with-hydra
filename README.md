@@ -15,7 +15,7 @@ In either case, setting up Hydra takes less than 5 minutes!
 
 The setup assumes your project is already configured to use TravisCI. If not, please read the [getting started](https://docs.travis-ci.com/user/tutorial/) to setup your project to build with TravisCI.
 
-1. Add [project/hydra.sbt](https://github.com/dotta/travis-with-hydra/blob/master/project/hydra.sbt) to your project.
+1. Add [project/hydra.sbt](https://github.com/triplequote/travis-with-hydra/blob/master/project/hydra.sbt) to your project.
 
 2. Create a secret $LICENSE environment variable that will old your Hydra Server license key. Next is the command to execute from inside the project folder (see https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables):
 
