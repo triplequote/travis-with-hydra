@@ -6,7 +6,12 @@
 resolvers += Resolver.url("Triplequote Plugins Releases",
   url("https://repo.triplequote.com/artifactory/sbt-plugins-release/"))(Resolver.ivyStylePatterns)
 
-if (sys.env.get("CI") == Some("true")) {
+def isCI = sys.env.get("CI") == Some("true")
+// This is needed to compile PRs originating from forks, as they are not allowed to access the secret LICENSE environment.
+// See https://docs.travis-ci.com/user/pull-requests/#pull-requests-and-security-restrictions
+def isPullRequestFromMainRepo: Boolean = sys.env.get("TRAVIS_PULL_REQUEST_SLUG") == Some("triplequote/travis-with-hydra")
+
+if (isCI && isPullRequestFromMainRepo) {
   // Visit https://docs.triplequote.com/ for the latest released version of Hydra
   addSbtPlugin("com.triplequote" % "sbt-hydra" % "2.1.2")
 }
