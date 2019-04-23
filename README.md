@@ -17,7 +17,7 @@ The setup assumes your project is already configured to use TravisCI. If not, pl
 
 1. Add [project/hydra.sbt](https://github.com/triplequote/travis-with-hydra/blob/master/project/hydra.sbt) to your project.
 
-2. Create a secret $LICENSE environment variable that will old your Hydra Server license key. Next is the command to execute from inside the project folder (see https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables):
+2. Create a secret $LICENSE environment variable that will hold your Hydra Server license key. Next is the command to execute from inside the project folder (see https://docs.travis-ci.com/user/environment-variables/#encrypting-environment-variables):
 
 ```bash 
 $ travis encrypt LICENSE="floating-key=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX" --add env.matrix
