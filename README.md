@@ -39,7 +39,7 @@ Mind that this should be done before any all steps compiling Scala. Look at [thi
 You are all set to compile Scala with Hydra on Travis!
 
 # Hydra Open Source project license
-A Hydra OSS license is granted to developers of non-commercial Open Source projects, with an established and active community. The license is free. However, we ask you to add a reference to Triplequote website on the web pages of your Open Source project (in particular, the README, documentation and product homepages), similar to the Credits section.
+A Hydra OSS license is granted to developers of non-commercial Open Source projects, with an established and active community. The license is free. However, we ask you to add a reference to Triplequote website on the web pages of your Open Source project (in particular, the README, documentation and product homepages), similar to the [Credits section](#credits) below.
 
 Also, we kindly ask you to help us grow awarness and excitement in the community (e.g., blogging or twitter - [@triple_quote](https://twitter.com/triple_quote) is our handle).
 
