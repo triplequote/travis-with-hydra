@@ -45,6 +45,6 @@ Also, we kindly ask you to help us grow awarness and excitement in the community
 
 # Credits
 
-[![Triplequote logo](https://www.triplequote.com/img/logo-web.png)](https://www.triplequote.com)
+[![Triplequote logo](https://www.triplequote.com/img/logo-250.png)](https://www.triplequote.com)
 
 Triplequote turns up compilation speed, tools, and support to write Scala code the way you always wanted to. Triplequote is the creator of the [Hydra compiler](https://www.triplequote.com/hydra/) and the [Hydra Monitoring](https://www.triplequote.com/hydra/monitoring/) tools.
