@@ -4,7 +4,9 @@ jdk:
   - oraclejdk8
 
 script:
-  - mkdir -p $HOME/.triplequote && echo "$LICENSE" > "$HOME/.triplequote/hydra.license"
+  - if [[ ! -z "$LICENSE" ]]; then
+      mkdir -p $HOME/.triplequote && echo "$LICENSE" > "$HOME/.triplequote/hydra.license";
+    fi  
   - sbt test
 
 env:
